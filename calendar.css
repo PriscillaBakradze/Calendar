@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-image: url("./background.jpg");
+    background-size: cover;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.container {
+    position: absolute;
+    top: 14rem;
+    width: 100vw;
+}
+
+.calendar {
+    background-color: #fdffcd;
+    margin: auto;
+    width: 600px;
+    box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.4);
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #ffebbb;
+    width: 100%;
+    padding: 40px 30px;
+}
+
+.weekdays {
+    display: flex;
+    text-align: center;
+    background-color: #ffe3a2; 
+    padding: 7px 0;
+}
+
+.date {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 500;
+    padding: 20px 0;
+}
+
+.date div {
+    margin-bottom: 10px;
+    padding: 10px 0;
+    transition: all 0.3s;
+}
+
+.weekdays div,
+.date div {
+    width: 14.28%;
+    text-align: center;
+}
+
+.date div:hover {
+    background-color: #ffe3a2; 
+    cursor: pointer;
+}
+
+.previous-date {
+    color: #a9a9a9;
+}
+
+.next-date {
+    color: #a9a9a9;
+}
+
+#month, #year {
+    font-size: 2rem;
+    font-weight: 500;
+    display: inline;
+    padding: 5px;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+.previous,
+.next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    width: 50px;
+    height: 50px;
+    background-color: #ffe4a1;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.previous:hover,
+.next:hover {
+    background-color: #fdffcd;
+    cursor: pointer;
+}
+
+.today {
+    background-color: #ffcab0;
+}
+
+@media screen and (max-width: 1500px) {
+    body {
+        height: 100vh;
+    }
+    .calendar {
+        width: 450px;
+    }
+}
